@@ -6,11 +6,11 @@ public class BookShelfIterator implements Iterator {
 
     public BookShelfIterator(BookShelf bookShelf) {
         this.bookShelf = bookShelf;
-        index = 0;
+        this.index = 0;
     }
     @Override
     public boolean hasNext() {
-        if (index >= bookShelf.getLast()) return false;
+        if (index >= bookShelf.getLength()) return false;
         return true;
     }
     @Override
