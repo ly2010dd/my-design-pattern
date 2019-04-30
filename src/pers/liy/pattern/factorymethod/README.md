@@ -28,14 +28,29 @@ public abstract class Factory {
 - 为其实现默认处理
 
 ```
-//子类必须实现该方法，不然编译报错
+//如果子类没实现该方法，则执行默认行为
 class Factory {
 	public Product createProduct(String owner) {
+		//注意这里使用new，因此不能将Product定义为抽象类
 		return new Product(owner);
 	}
 }
 
 ```
 
+- 在其中抛出异常
+
+```
+class Factory {
+	public Product createProduct(String owner) {
+		throw new FactoryMethodRuntimeException();
+	}
+}
+```
+
 
 ### 相关的设计模式
+- Template Method模式
+- Singleton模式
+- Composite模式
+- Iterator模式
