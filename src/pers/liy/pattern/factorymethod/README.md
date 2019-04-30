@@ -11,3 +11,31 @@
 ### 说明
 - 只要Factory Method模式，在生成实例时就一定会使用到Template Method模式	
 - 不用new生成实例，而用专用的方法来生成实例，可防止父类与其他类耦合
+- 在新定义TelevisonFactory时，我们只要import framework包就可以编写televison包，不用修改framework包的内容
+- 在framework包中的类中并没有出现具体类的名字，称作framework包不依赖于idcard包
+
+### 生成实例的三种方式
+- 指定为抽象方法
+
+```
+//子类必须实现该方法，不然编译报错
+public abstract class Factory {
+	protected abstract Product createProduct(String owner);
+}
+
+```
+
+- 为其实现默认处理
+
+```
+//子类必须实现该方法，不然编译报错
+class Factory {
+	public Product createProduct(String owner) {
+		return new Product(owner);
+	}
+}
+
+```
+
+
+### 相关的设计模式
