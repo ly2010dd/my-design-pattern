@@ -4,6 +4,12 @@
 - 用Template Method模式构建生成实例的工厂
 - 父类决定实例的生成方式，但不决定所要生成的具体类，具体的处理全部交给子类负责，起到解耦的作用
 
+### 类图
+![image](imgs/factory-method-pattern.png)
+
+### 角色
+![image](imgs/factory-method-pattern-role.png)
+
 ### 实现
 - framework包：Product类、Factory类
 - idcard包：IDCard类、IDCardFactory类
