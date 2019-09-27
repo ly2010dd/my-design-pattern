@@ -7,4 +7,4 @@
 ### 类图
 ![image](imgs/builder-pattern-example.png)
 
-![image](imgs/builder-pattern-example-main.png)
+![image](imgs/builder-pattern.png)
