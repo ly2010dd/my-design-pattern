@@ -24,7 +24,7 @@
 
 交给子类
 - Template Method模式---将具体处理交给子类
-- Fectory Method模式---将实例的生成交给子类
+- Factory Method模式---将实例的生成交给子类
 
 生成实例
 - Singleton模式---只有一个实例
